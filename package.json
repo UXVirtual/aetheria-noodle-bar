@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run serve & scripts/launch-browser.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run dist && gh-pages -d dist",
+    "deploy": "npm run dist && ghpages -p dist",
     "dist": "cp index.html dist && cp -R assets dist",
     "serve": "node node_modules/.bin/http-server ./ -p 3000 --gzip"
   },
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/HAZARDU5/aetheria-noodle-bar#readme",
   "devDependencies": {
     "gh-pages": "^1.1.0",
+    "ghpages": "0.0.10",
     "http-server": "^0.10.0"
   }
 }
